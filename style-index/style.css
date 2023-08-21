@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  font-family: "Teko", sans-serif;
+}
+body #playground {
+  position: absolute;
+  width: 1000px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #playground #myCanvas {
+  background-color: #181818;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  position: absolute;
+  margin-bottom: 5rem;
+  top: 20rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body #playground div.decorate {
+  color: white;
+  font-size: 2rem;
+}
+body #playground div.decorate p:first-child {
+  position: absolute;
+  top: 9%;
+  left: 1%;
+  transform-origin: right top;
+  transform: rotate(-90deg);
+}
+body #playground div.decorate p:nth-child(2) {
+  position: absolute;
+  top: 3%;
+  left: 7.5%;
+}
+body #playground div.decorate p:nth-child(3) {
+  position: absolute;
+  bottom: 19%;
+  right: 1%;
+  transform-origin: left top;
+  transform: rotate(90deg);
+}
+body #playground div.decorate p:nth-child(4) {
+  position: absolute;
+  right: 15%;
+  bottom: 5%;
+  transform-origin: right top;
+  transform: rotate(180deg);
+}
+body #playground div.score1 {
+  font-size: 2rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 2%;
+  right: 12%;
+}
+body #playground div.score1 #myScore {
+  color: white;
+}
+body #playground div.score1 #myScore2 {
+  color: yellow;
+  font-size: 2.5rem;
+}
+body #playground div.score2 {
+  font-size: 2rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  left: 11%;
+}
+body #playground div.score2 #highestScore {
+  color: white;
+}
+body #playground div.score2 #highestScore2 {
+  color: aquamarine;
+  font-size: 2.5rem;
+}
+body #playground div.container {
+  position: absolute;
+  bottom: 7%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+body #playground div.container .start-btn {
+  all: unset;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 0.3rem 1.5rem;
+  padding-top: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+body #playground div.container .start-btn::after {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 0.5s;
+}
+body #playground div.container .start-btn:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+body #playground div.container .start-btn:hover::after {
+  transform: scaleX(1);
+}/*# sourceMappingURL=style.css.map */

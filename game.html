@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>彈跳球遊戲</title>
+    <meta name="autor" content="Trista" />
+    <!-- 字體 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style-index/style.css" />
+  </head>
+  <body>
+    <!--遊戲區域-->
+    <section id="playground">
+      <a id="myCover" href="./index.html"></a>
+      <!-- 畫圖區 -->
+      <canvas id="myCanvas" width="780" height="510"></canvas>
+      <!-- 外框裝飾 -->
+      <div class="decorate">
+        <p>BALLS</p>
+        <p>BOUNCE</p>
+        <p>BALLS</p>
+        <p>BOUNCE</p>
+      </div>
+      <!-- 分數 -->
+      <div class="score1">
+        <p id="myScore">SCORE：</p>
+        <p id="myScore2">5000</p>
+      </div>
+      <!-- 最高分數 -->
+      <div class="score2">
+        <p id="highestScore">BEST：</p>
+        <p id="highestScore2">5000</p>
+      </div>
+      <div class="container">
+        <button type="button" class="start-btn" onclick="location.reload()">
+          New Game
+        </button>
+      </div>
+    </section>
+    <!-- JS -->
+    <script src="./app.js"></script>
+  </body>
+</html>
